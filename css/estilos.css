@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#seccion-botones-vistas {
+    margin-bottom: 20px;
+}
+
+#seccion-botones-vistas button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+#contenedor-principal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.vista-calendario {
+    display: none;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#calendario-anual .mes {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#calendario-mensual div ,
+#calendario-diario div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calendario-mensual .con-evento,
+#calendario-diario .con-evento {
+    background-color: #e0e0e0;
+}
+
+#contenedor-formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#formulario-evento label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formulario-evento input,
+#formulario-evento textarea,
+#formulario-evento select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#formulario-evento button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}

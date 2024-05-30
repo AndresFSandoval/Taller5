@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Eventos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section id="seccion-botones-vistas">
+        <button id="boton-vista-anual">Vista Anual</button>
+        <button id="boton-vista-mensual">Vista Mensual</button>
+        <button id="boton-vista-diaria">Vista Diaria</button>
+    </section>
+    <main id="contenedor-principal">
+        <div id="calendario-anual" class="vista-calendario"></div>
+        <div id="calendario-mensual" class="vista-calendario"></div>
+        <div id="calendario-diario" class="vista-calendario"></div>
+    </main>
+
+    <aside id="contenedor-formulario">
+        <form id="formulario-evento">
+            <h2 id="titulo-formulario">Añadir Evento</h2>
+            <label for="titulo-evento">Título:</label>
+            <input type="text" id="titulo-evento" name="title" required>
+            <label for="fecha-evento">Fecha:</label>
+            <input type="date" id="fecha-evento" name="date" required>
+            <label for="hora-evento">Hora:</label>
+         <label for="hora-evento">Hora:</label>
+<select id="hora-evento" name="time" required>
+    <option value="00:00">12:00 AM</option>
+    <option value="00:30">12:30 AM</option>
+    <option value="01:00">01:00 AM</option>
+    <option value="01:30">01:30 AM</option>
+    <option value="02:00">02:00 AM</option>
+    <option value="02:30">02:30 AM</option>
+    <option value="03:00">03:00 AM</option>
+    <option value="03:30">03:30 AM</option>
+    <option value="04:00">04:00 AM</option>
+    <option value="04:30">04:30 AM</option>
+    <option value="05:00">05:00 AM</option>
+    <option value="05:30">05:30 AM</option>
+    <option value="06:00">06:00 AM</option>
+    <option value="06:30">06:30 AM</option>
+    <option value="07:00">07:00 AM</option>
+    <option value="07:30">07:30 AM</option>
+    <option value="08:00">08:00 AM</option>
+    <option value="08:30">08:30 AM</option>
+    <option value="09:00">09:00 AM</option>
+    <option value="09:30">09:30 AM</option>
+    <option value="10:00">10:00 AM</option>
+    <option value="10:30">10:30 AM</option>
+    <option value="11:00">11:00 AM</option>
+    <option value="11:30">11:30 AM</option>
+    <option value="12:00">12:00 PM</option>
+    <option value="12:30">12:30 PM</option>
+    <option value="13:00">01:00 PM</option>
+    <option value="13:30">01:30 PM</option>
+    <option value="14:00">02:00 PM</option>
+    <option value="14:30">02:30 PM</option>
+    <option value="15:00">03:00 PM</option>
+    <option value="15:30">03:30 PM</option>
+    <option value="16:00">04:00 PM</option>
+    <option value="16:30">04:30 PM</option>
+    <option value="17:00">05:00 PM</option>
+    <option value="17:30">05:30 PM</option>
+    <option value="18:00">06:00 PM</option>
+    <option value="18:30">06:30 PM</option>
+    <option value="19:00">07:00 PM</option>
+    <option value="19:30">07:30 PM</option>
+    <option value="20:00">08:00 PM</option>
+    <option value="20:30">08:30 PM</option>
+    <option value="21:00">09:00 PM</option>
+    <option value="21:30">09:30 PM</option>
+    <option value="22:00">10:00 PM</option>
+    <option value="22:30">10:30 PM</option>
+    <option value="23:00">11:00 PM</option>
+    <option value="23:30">11:30 PM</option>
+</select>
+            <label for="descripcion-evento">Descripción:</label>
+            <textarea id="descripcion-evento" name="description" required></textarea>
+            <label for="participantes-evento">Nombres de los participantes:</label>
+            <input type="text" id="participantes-evento" name="participants" required>
+            <button type="submit">Guardar</button>
+            <button type="button" id="boton-cancelar">Cancelar</button>
+        </form>
+    </aside>
+
+    <script src="js/java.js"></script>
+</body>
+</html>
